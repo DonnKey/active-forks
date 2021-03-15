@@ -352,7 +352,10 @@ function Api(token) {
         authorization: "token " + token
       }
     }
-    : undefined;
+    : {
+      headers: {
+      }
+    };
 
   const rate = {
     remaining: '?',

@@ -64,7 +64,7 @@ function updateDT(data) {
   // Format dataset and redraw DataTable. Use second index for key name
   const forks = [];
   for (let fork of data) {
-    fork.repoLink = `<a href="https://github.com/${fork.full_name}" target="_blank" rel="noopener noreferrer">Link</a>`;
+    fork.repoLink = `<a href="https://github.com/${fork.full_name}">Link</a>`;
     fork.ownerName = fork.owner.login;
     forks.push(fork);
   }
